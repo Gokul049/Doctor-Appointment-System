@@ -1,6 +1,6 @@
 # Doctor-Appointment-System
 The Doctor Appointment System in Core Java enables adding/viewing doctors and patients, booking, viewing, and cancelling appointments. It uses object-oriented principles and in-memory data structures to efficiently manage healthcare scheduling.
-# Java Program --python
+# Java Program 
 # main Class
 ''' python
 package HospitalManagement;
@@ -451,6 +451,34 @@ public class BookAppointment {
 		
 	}
 }'''
+# SQL 
+Doctor Table
+CREATE TABLE doctors (
+  id MEDIUMINT(8) NOT NULL AUTO_INCREMENT,
+  NAME VARCHAR(255) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+Patients Table
+CREATE TABLE patients (
+  id MEDIUMINT(8) NOT NULL AUTO_INCREMENT,
+  NAME VARCHAR(100) NOT NULL,
+  age VARCHAR(3) NOT NULL,
+  gender VARCHAR(7) NOT NULL,
+  PRIMARY KEY (id)  
+);
+Appointments Table
+CREATE TABLE appointments (
+  id MEDIUMINT(8) NOT NULL AUTO_INCREMENT,
+  patient_id MEDIUMINT(8) NOT NULL,
+  doctor_id MEDIUMINT(8) NOT NULL,
+  appointment_date DATE NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (patient_id) REFERENCES patients (id),
+  FOREIGN KEY (doctor_id) REFERENCES doctors (id)
+);
+
 # Output
 ![image](https://github.com/user-attachments/assets/55ed719e-b33e-4859-95cd-7922e6fcdd21)
 
