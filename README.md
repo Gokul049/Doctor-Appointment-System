@@ -178,7 +178,7 @@ public class Patients {
 	}
 }
 # Doctors Class
-'''python
+
 package HospitalManagement;
 
 import java.sql.Connection;
@@ -277,7 +277,7 @@ public class Doctors {
 	}
 
 }
-'''
+
 # DatabaseConnection Class
 package HospitalManagement;
 
@@ -304,7 +304,7 @@ public class DataBaseService {
 	
 }
 # Appointment Booking Class 
-''' python
+
 package HospitalManagement;
 
 import java.sql.*;
@@ -450,7 +450,7 @@ public class BookAppointment {
 	}
 		
 	}
-}'''
+}
 # SQL 
 Doctor Table
 CREATE TABLE doctors (
