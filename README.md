@@ -2,7 +2,7 @@
 The Doctor Appointment System in Core Java enables adding/viewing doctors and patients, booking, viewing, and cancelling appointments. It uses object-oriented principles and in-memory data structures to efficiently manage healthcare scheduling.
 # Java Program 
 # main Class
-''' python
+
 package HospitalManagement;
 
 import java.sql.*;
@@ -77,9 +77,9 @@ public class Main {
 		
 	}
 
-}'''
+}
 # Patients Class
-''' python
+
 package HospitalManagement;
 
 import java.sql.*;
@@ -176,9 +176,9 @@ public class Patients {
 		return false; 
 		
 	}
-}'''
+}
 # Doctors Class
-''' python 
+'''python
 package HospitalManagement;
 
 import java.sql.Connection;
